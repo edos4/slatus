@@ -1,0 +1,28 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: slatus
+  username: postgres
+  host: localhost
+  password: postgres
+
+test:
+  <<: *default
+  database: slatus_test
+  username: postgres
+  password: postgres
+  host: localhost
+
+production:
+  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  database: slatus_prod
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
