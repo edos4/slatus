@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "f3a7cc57-fb36-4cb1-917c-48aeac0955ba",
+		"name": "Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test Slack Status Change",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "slatus.herokuapp.com/api/v1/status/change?token=xoxp-578938749364-580410928646-580750903971-a8a694dc164cbec2469a42c957a3c1e3&status_text=hi there&status_emoji=😄&domain=edoscorp",
+					"host": [
+						"slatus",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"status",
+						"change"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "xoxp-578938749364-580410928646-580750903971-a8a694dc164cbec2469a42c957a3c1e3"
+						},
+						{
+							"key": "status_text",
+							"value": "hi there"
+						},
+						{
+							"key": "status_emoji",
+							"value": "😄"
+						},
+						{
+							"key": "domain",
+							"value": "edoscorp"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Test Slack Status Change",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "slatus.herokuapp.com/api/v1/status/change?token=xoxp-578938749364-580410928646-580750903971-a8a694dc164cbec2469a42c957a3c1e3&status_text=hi there&status_emoji=😄&domain=edoscorp",
+							"host": [
+								"slatus",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"status",
+								"change"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "xoxp-578938749364-580410928646-580750903971-a8a694dc164cbec2469a42c957a3c1e3"
+								},
+								{
+									"key": "status_text",
+									"value": "hi there"
+								},
+								{
+									"key": "status_emoji",
+									"value": "😄"
+								},
+								{
+									"key": "domain",
+									"value": "edoscorp"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 18 Mar 2019 22:52:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"27badc983df1780b60c2b3fa9d3a19a0\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "b689757c-c708-4acf-bfea-28ae75a67161"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.085588"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "200"
+				}
+			]
+		}
+	]
+}
